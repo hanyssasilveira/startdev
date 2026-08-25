@@ -1,0 +1,21 @@
+algoritmo "alunos"
+var
+   N1, N2, media: Real
+
+inicio
+   EscrevaL("Escola")
+   Escreva("Primeira Nota: ")
+   Leia (N1)
+   Escreva("Segunda Nota: ")
+   Leia (N2)
+   media <- (N1 + N2) / 2
+   EscrevaL ("Média: ", media)
+
+   Se media >= 7.0 entao
+      Escreva("Aluno Aprovado")
+   senao
+      Escreva ("Aluno Reprovado")
+   FimSe
+
+
+fimalgoritmo
