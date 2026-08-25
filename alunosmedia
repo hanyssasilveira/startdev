@@ -9,12 +9,16 @@ inicio
    Escreva("Segunda Nota: ")
    Leia (N2)
    media <- (N1 + N2) / 2
-   EscrevaL ("Média: ", media)
+   EscrevaL ("Média: ", media:4:2)
 
    Se media >= 7.0 entao
       Escreva("Aluno Aprovado")
    senao
-      Escreva ("Aluno Reprovado")
+      Se (media >= 5.0) e (media < 7.0) entao
+         Escreva("Aluno em Recuperação")
+      senao
+         Escreva ("Aluno Reprovado")
+      FimSe
    FimSe
 
 
