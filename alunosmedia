@@ -1,23 +1,41 @@
-algoritmo "alunos"
+algoritmo "semnome"
 var
    N1, N2, media: Real
 
 inicio
-   EscrevaL("Escola")
-   Escreva("Primeira Nota: ")
-   Leia (N1)
-   Escreva("Segunda Nota: ")
+   Escreva ("Primeira Nota: ")
+   Leia(N1)
+   Escreva ("Segunda Nota: ")
    Leia (N2)
    media <- (N1 + N2) / 2
-   EscrevaL ("Média: ", media:4:2)
-
-   Se media >= 7.0 entao
-      Escreva("Aluno Aprovado")
+   EscrevaL ("Média do aluno:", media)
+   Se (media >= 9) entao
+      EscrevaL("Aluno Aprovado!")
+      EscrevaL("Classificação: A")
    senao
-      Se (media >= 5.0) e (media < 7.0) entao
-         Escreva("Aluno em Recuperação")
+      Se (media >= 8) e (media < 8.9) entao
+         EscrevaL("Aluno Aprovado!")
+         EscrevaL("Classificação: B")
       senao
-         Escreva ("Aluno Reprovado")
+         Se (media >= 7) e (media < 7.9) entao
+            EscrevaL("Aluno Aprovado!")
+            EscrevaL("Classificação: C")
+         senao
+            Se (media >= 6) e (media < 6.9) entao
+               EscrevaL("Aluno Reprovado!")
+               EscrevaL("Classificação: D")
+            senao
+               Se (media >= 5) e (media < 5.9) entao
+                  EscrevaL("Aluno Reprovado!")
+                  EscrevaL("Classificação: E")
+               senao
+                  Se (media < 5)entao
+                     EscrevaL("Aluno Reprovado!")
+                     EscrevaL("Classificação: F")
+                  FimSe
+               FimSe
+            FimSe
+         FimSe
       FimSe
    FimSe
 
