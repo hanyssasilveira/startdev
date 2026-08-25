@@ -1,0 +1,19 @@
+algoritmo "CalculoIMC"
+var
+   peso, altura, IMC: Real
+
+inicio
+   Escreva ("Digite seu peso (kg):")
+   Leia (peso)
+   Escreva ("Digite sua altura (m):")
+   Leia (altura)
+   IMC <- peso / (altura ^ 2)
+   EscrevaL ("IMC: ", IMC:5:2)
+   Se (IMC >= 18.5) e (IMC < 25) entao
+      EscrevaL ("Parabéns! Você está no seu Peso Ideal")
+   senao
+      Escreva ("Você não esta na faixa de peso ideal.")
+   FimSe
+
+
+fimalgoritmo
