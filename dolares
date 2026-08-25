@@ -1,0 +1,15 @@
+algoritmo "dolares"
+var
+   reais, dolares, valor_dolar_atual: Real
+
+inicio
+      Escreva("Quantos reais você tem? ")
+      Leia(reais)
+      Escreva("Qual valor de 1(um) dolar hoje? ")
+      Leia(valor_dolar_atual)
+      dolares <- reais/valor_dolar_atual
+      Escreva("Com o dolar atual a:", valor_dolar_atual, ". Você terá:", dolares)
+
+      
+
+fimalgoritmo
