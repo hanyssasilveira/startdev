@@ -1,2 +1,5 @@
 # startdev
-Onde tudo começou
+Onde tudo começou.
+
+Código em Portugol
+Programa: VISUALG
